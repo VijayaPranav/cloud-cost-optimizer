@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env
+
+# VS Code
+.vscode/
+
+# Reports
+reports_output/
+*.csv
+
+# Lambda packages
+lambda_package/
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# AWS credentials
+.aws/
