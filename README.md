@@ -157,6 +157,48 @@ Amazon S3 Storage
       ↓
 Streamlit Dashboard
 ---------------------------------------------------------------------------------------------------------------------
+## Dashboard Screenshots
+
+### Dashboard Overview
+
+![Dashboard Overview](screenshots/dashboard_overview.png)
+
+### Latest Cloud Snapshot
+
+![Latest Cloud Snapshot](screenshots/latest_cloud_snapshot.png)
+
+### Idle EC2 Instances
+
+![Idle Instances](screenshots/idle_instances.png)
+
+### Active vs Idle Instances
+
+![Active vs Idle](screenshots/idlle_vs_Active_instances.png)
+
+### Historical Analytics
+
+![Historical Analytics](screenshots/historical_analnalysis.png)
+
+### Billing Analytics
+
+![Billing Analytics](screenshots/billing_analytics.png)
+
+### Service-wise Cost Breakdown
+
+![Service Cost](screenshots/service_wise_cost.png)
+
+### EBS Waste Analysis
+
+![EBS Waste Analysis](screenshots/ebs_wastage.png)
+
+### EventBridge Automation
+
+![EventBridge](screenshots/eventbridge_schedule.png)
+
+### CloudWatch Logs
+
+![CloudWatch Logs](screenshots/cloudwatch_logs.png)
+---------------------------------------------------------------------------------------------------------------------
 ## AWS Services Used
 
 * Amazon EC2
