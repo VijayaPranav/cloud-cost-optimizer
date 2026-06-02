@@ -1,5 +1,5 @@
 # Cloud Cost Optimizer
-
+![Dashboard Overview](screenshots/dashboard_overview.png)
 ## Overview
 
 Cloud Cost Optimizer is an AWS-based cloud analytics platform that identifies underutilized cloud resources, estimates infrastructure waste, and provides cost-saving recommendations. The system continuously analyzes AWS resources, generates optimization reports, stores them in Amazon S3, and visualizes insights through an interactive Streamlit dashboard.
@@ -143,19 +143,32 @@ Workflow:
 ---------------------------------------------------------------------------------------------------------------------
 ## Architecture
 
-EventBridge Scheduler
-      ↓
-AWS Lambda
-      ↓
-Resource Analysis Engine
-      ↓
-CloudWatch + EC2 + EBS + Cost Explorer APIs
-      ↓
-CSV Report Generation
-      ↓
-Amazon S3 Storage
-      ↓
-Streamlit Dashboard
+```mermaid
+flowchart TD
+    A[EventBridge Scheduler]
+    B[AWS Lambda]
+    C[Resource Analysis Engine]
+    D[CloudWatch Metrics]
+    E[Amazon EC2]
+    F[Amazon EBS]
+    G[AWS Cost Explorer]
+    H[CSV Report Generation]
+    I[Amazon S3 Storage]
+    J[Streamlit Dashboard]
+
+    A --> B
+    B --> C
+    C --> D
+    C --> E
+    C --> F
+    C --> G
+    D --> H
+    E --> H
+    F --> H
+    G --> H
+    H --> I
+    I --> J
+```
 ---------------------------------------------------------------------------------------------------------------------
 ## Dashboard Screenshots
 
